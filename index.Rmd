@@ -1,5 +1,5 @@
 ---
-title: "Audika Alicante, from June 14th to 28th, 2020"
+title: "Asia Garden's Budget for Audika Group, from June 14th to 18th, 2020"
 output: 
   flexdashboard::flex_dashboard:
     theme: sandstone
@@ -48,7 +48,7 @@ row_spec(0, bold = T, color = "white", background = "black")  %>%
 _**Audika Alicante**_ {data-width=850}
 -------------------------------------------
 
-### Budget as of July 23rd, 2019
+### Budget as of August 5th
 
 <br><br>
 
@@ -56,7 +56,7 @@ _**Audika Alicante**_ {data-width=850}
 
 ```{r budget_table}
 
-budget <- read_excel("rooming.xlsx", sheet = "bud", range = "B13:G55") 
+budget <- read_excel("rooming.xlsx", sheet = "bud", range = "B13:G40") 
 budget <- sapply(budget, as.character)
 budget[is.na(budget)] <- ""
 budget <- data.frame(budget, stringsAsFactors = FALSE)
